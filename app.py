@@ -42,7 +42,6 @@ st.markdown("""
 # ── Load model and columns ────────────────────────────────────
 @st.cache_resource
 def load_model():
-    base_path = os.path.dirname(os.path.abspath(__file__))
     model_path   = os.path.join('model', 'house_price_model.pkl')
     columns_path = os.path.join('model', 'columns.pkl')
     with open(model_path, 'rb') as f:
